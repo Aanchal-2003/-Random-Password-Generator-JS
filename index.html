@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1><i class="fa-solid fa-key"></i>Password Generator</h1>
+        <div class="password-box">
+            <span class="password" id="password">******</span>
+            <button class="copy-btn" id="copyBtn" title="Copy"><i class="fa-regular fa-copy"></i></button>
+        </div>
+        <div class="controls">
+            <label for="">
+                <span>Password Length:</span>
+                <input type="range" name="" id="length" min="6" max="25" value="12">
+                <span id="lengthValue">12</span>
+            </label>
+            <label for="">
+                <input type="checkbox" name="" id="uppercase" checked>
+                <span>Include Uppercase</span>
+            </label>
+            <label for="">
+                <input type="checkbox" name="" id="numbers" checked>
+                <span>Include Numbers</span>
+            </label>
+            <label for="">
+                <input type="checkbox" name="" id="symbols" checked>
+                <span>Include Symbols</span>
+            </label>
+            <label for="">
+                <input type="checkbox" name="" id="lowercase" checked>
+                <span>Include Lowercase</span>
+            </label>
+        </div>
+        <button class="generate-btn" onclick="generatePassword()">
+            <i class="fa-solid fa-bolt"></i>Generate
+        </button>
+        <div class="msg" id="msg"></div>
+    </div>
+
+
+
+   <script src="app.js"></script>
+</body>
+
+</html>
